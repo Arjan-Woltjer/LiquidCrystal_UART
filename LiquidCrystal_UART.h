@@ -112,14 +112,4 @@ public:
   void write_buffer(char * line, uint8_t line_no);
   void write_buffer(char character, uint8_t line_no, uint8_t col_no);
 };
-
-// Arduino 0012 workaround
-//#undef int
-//#undef char
-//#undef long
-//#undef byte
-//#undef float
-//#undef abs
-//#undef round
-
 #endif

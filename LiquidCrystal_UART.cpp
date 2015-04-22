@@ -338,16 +338,11 @@ LiquidCrystal_UART::LiquidCrystal_UART(uint8_t receivePin, uint8_t transmitPin,
   
   _screencounter = 0;
   
-  // init buffers
-  _screen[0], "                    ";
-  _screen[1], "                    ";
-  _screen[2], "                    ";
-  _screen[3], "                    ";
-  
-  _buffer[0], "                    ";
-  _buffer[1], "                    ";
-  _buffer[2], "                    ";
-  _buffer[3], "                    ";
+  // init buffers 
+  write_buffer("                    ", 0);
+  write_buffer("                    ", 1);
+  write_buffer("                    ", 2);
+  write_buffer("                    ", 3);
 }
 
 //
